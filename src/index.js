@@ -69,10 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
         renderNotes()
     }
 
-
-    if (screen.width<= 700) {
+    window.addEventListener("resize", () => {
+        if (screen.width<= 700) {
     
-        mainContainer.innerHTML = `<h1 class=" selection:bg-none  text-3xl ">Not Available For Phone</h1>`
-    }
+            mainContainer.innerHTML = `<h1 class=" selection:bg-none  text-3xl ">Not Available For Phone</h1>`
+        }
+        else{
+            renderNotes()
+        }
+    })
+
+    
 })
 
