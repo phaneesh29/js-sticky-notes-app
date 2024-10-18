@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Stiky Notes</title>
+</head>
+<body class="min-h-screen h-screen flex items-center justify-center flex-col gap-2">
+    <h1 class=" selection:bg-none  text-3xl ">Stiky Notes</h1>
+    <h2 class="selection:bg-none text-xl">Double click to add a note</h2>
+    <div id="main" class="main w-[90%] h-[90%] border rounded-lg flex items-center justify-center ring-2 ring-gray-500">
+    </div>
+
+
+    <div id="notesAdd" class="w-[80%] h-[80%] bg-blue-100 text-black  p-10 justify-evenly items-center rounded-lg shadow-lg absolute flex-col gap-4 hidden">
+
+        <h1 class="text-3xl font-semibold">Create a Note</h1>
+            <textarea name="note" id="note-input" class="w-[70%] min-h-[250px] resize-y bg-transparent focus:outline-none border-2 border-gray-500 p-3 " placeholder="Enter your note"></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg text-xl" id="add-notes-btn">Add</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
+
+
+
